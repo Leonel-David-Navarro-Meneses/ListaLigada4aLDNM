@@ -2,6 +2,7 @@ package listaligada;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.function.BiPredicate;
 import java.io.IOException;
 
 public class TestingListaLigada {
@@ -35,6 +36,7 @@ public class TestingListaLigada {
         System.out.println("contenido de la lista ligada");
         lista.printList();
 
+        /*
         System.out.println("--------------------------");
         System.out.println("insercion de un nuevo nodo");
         System.out.println("escribe el elemento a insertar");
@@ -48,5 +50,20 @@ public class TestingListaLigada {
        System.out.println("----------------");
        System.out.println("contenido de la lista ligada: ");
        lista.printList();
+    } */
+
+    //nueva listaligada, ahora con Strings
+    ListaLigada<String> lista2 = new ListaLigada<>();
+    System.out.println("---creando una lista de Strnigs ----");
+    for(;;){
+        System.out.println("escribe dato String para agregar a la lista: ");
+        entrada = bufer.readLine();
+        respuesta = entrada.charAt(0);
+        if(respuesta == 'n' || respuesta == 'N')
+        break;
     }
+System.out.println("contenido de la lista de strings: ");
+lista2.printList();
+}
+
 }
