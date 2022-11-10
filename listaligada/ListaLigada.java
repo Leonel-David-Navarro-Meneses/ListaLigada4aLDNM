@@ -65,4 +65,18 @@ public void printList(){
     }
 }
 
+public void eliminarInicio(){
+
+}
+
+public void eliminarFinal(){
+
+}
+
+public void eliminadorEspecifico(){
+
+}
+
+
+
 }
