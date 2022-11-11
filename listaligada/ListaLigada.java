@@ -26,15 +26,15 @@ public class ListaLigada <T>{
 public void add(T dato){
        Nodo nuevoNodo = new Nodo(dato);
        this.size++;
-       this.tail = nuevoNodo;//semueve el apuntador al ultimo nodo
+       this.tail = nuevoNodo;//se mueve el apuntador al ultimo nodo
 
 if(head == null){
     head = nuevoNodo;
    actual = head;
 }else{
 
-       actual.setSiguiente(nuevoNodo);//actual apunta al nuevoNodo(enlace entre nodos)
-       actual = nuevoNodo;//ahora actual es el nuevoNodo
+       tail.setSiguiente(nuevoNodo);//actual apunta al nuevoNodo(enlace entre nodos)
+       this.tail = nuevoNodo;//ahora actual es el nuevoNodo
 }
 
     }
